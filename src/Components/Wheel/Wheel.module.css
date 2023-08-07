@@ -1,0 +1,34 @@
+:root {
+    --wheelRatio: 1.25rem;
+}
+
+.wheel {
+    width: 400px;
+    height: 400px;
+
+    background-color: rgb(235, 231, 231);
+
+    border-radius: 50%;
+
+    position: relative;
+
+    margin: auto;
+
+}
+
+.wheelPointer {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+    width: var(--wheelRatio);
+    height: var(--wheelRatio);
+
+    background-color: rgb(204, 0, 0);
+
+    position: absolute;
+
+    top: calc(-1 * (var(--wheelRatio) / 2));
+
+    left: 50%;
+    transform: translateX(-50%);
+
+}
